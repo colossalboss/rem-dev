@@ -1,0 +1,18 @@
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    background: none;
+    color: #3b5998;
+}
+
+.fa-twitter {
+    background: none;
+    color: #1da1f2;
+}
