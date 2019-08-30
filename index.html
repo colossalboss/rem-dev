@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>RemDev | Home</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/feather-icons"></script>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta charset="utf-8">
     </head>
     <body>
         <header>
-            <div class="logo">
-                RemDev
+            <div class="container">
+                <a class="logo" href="#">
+                    RemDev
+                </a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#"><button type="button" class="btn-small">Sign Up</button></a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <div>Home</div>
-                <div>About Us</div>
-                <div>Developers</div>
-                <div>Login</div>
-                <button type="button">Sign Up</button>
-            </nav>
         </header>
         <main>
             <div class="how-it-works"></div>
@@ -30,14 +38,19 @@
             </div>
             <div class="what-are-you-waiting-for"></div>
         </main>
-        <footer>
+        <footer class="footer">
             <div>
                 &copy; 2019 <strong>RemDev</strong>
             </div>
             <div>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
+                <i data-feather="facebook" class="social"></i>
+                <i data-feather="twitter" class="social"></i>
+                <i data-feather="github" class="social"></i> 
             </div>
         </footer>
+        
     </body>
+    <script>
+        feather.replace()
+    </script>
 </html>
