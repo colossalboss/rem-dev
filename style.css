@@ -1,7 +1,7 @@
 /* Style body & general content */
 html {
     box-sizing: border-box;
-    padding: 0 auto;
+    padding: 0px auto;
 }
 
 *, *:before, *:after {
@@ -13,11 +13,16 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #eeeeee;
     text-align: center;
+    margin: 0px;
 }
 
 a {
     text-decoration: none;
     color: #eeeeee;
+}
+
+h2 {
+    margin: 0px;
 }
 
 /* Style buttons */
@@ -26,6 +31,8 @@ button {
     border-radius: 5px;
     border: none;
     color: #eeeeee;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
 }
 
 .btn-small {
@@ -58,8 +65,8 @@ button {
     border-bottom: 1px solid #eeeeee;
     display: flex;
     justify-content: space-between;
-    padding: 20px 40px 20px 40px;
-    margin: 0 auto;
+    padding: 0px 40px;
+    margin: 0px auto;
     }
 
 .nav-links {
@@ -79,6 +86,7 @@ li {
 .logo {
     font-family: 'Pacifico', cursive;
     font-size: 35px;
+    margin: 16px 0px 16px;
 }
 
 /* Style footer */
@@ -181,6 +189,33 @@ hr {
     border-radius: 5px;
     width: 15%;
     padding: 10px;
+}
+
+/* Style Section "Projects" */
+.projects {
+    background-color: white;
+    color: #001f3f;
+    padding: 40px;
+}
+
+.social-logo-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px 0px 40px;
+}
+
+.social-logo {
+    border: 1px solid #001f3f;
+    width: 144px;
+    height: 144px;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.social-logo-image {
+    width: 100px;
+    height: auto;
 }
 
 /* Style Section "What are you waiting for?" */
