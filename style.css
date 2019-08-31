@@ -10,6 +10,51 @@ a {
     color: #eeeeee;
 }
 
+/* Style buttons */
+button {
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: #eeeeee;
+}
+
+.btn-small {
+    width: 122px;
+    background-color: green;
+}
+
+.btn-large.find {
+    width: 362px;
+    background-color: green;
+}
+
+.btn-large.register {
+    width: 362px;
+    background-color: red;
+}
+
+.btn-medium.find {
+    width: 242px;
+    background-color: green;
+}
+
+.btn-medium.register {
+    width: 242px;
+    background-color: red;
+}
+
+/* Style Search Bar */
+.search-bar {
+    width: 340px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 2px solid #eeeeee;
+    padding-left: 18px;
+    border-radius: 5px;
+}
+
+
 /* Style Header & Navigation */
 .container {
     border-bottom: 1px solid #eeeeee;
@@ -44,3 +89,28 @@ li {
 .social {
     color: #eeeeee;
 }
+
+/* Style Section "Hire the best remote dev..." */
+.hero {
+    width: 100%;
+    display: flex;
+}
+
+.search, .vector-file {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+/* .horizontal-rule {
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+}
+
+hr, .or {
+    display: inline-block;
+}
+hr {
+    width: 160px;
+} */
