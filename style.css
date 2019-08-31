@@ -1,8 +1,18 @@
 /* Style body & general content */
+html {
+    box-sizing: border-box;
+    padding: 0 auto;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     background-color: #001f3f;
     font-family: 'Source Sans Pro', sans-serif;
     color: #eeeeee;
+    text-align: center;
 }
 
 a {
@@ -12,7 +22,7 @@ a {
 
 /* Style buttons */
 button {
-    height: 40px;
+    height: 50px;
     border-radius: 5px;
     border: none;
     color: #eeeeee;
@@ -24,12 +34,12 @@ button {
 }
 
 .btn-large.find {
-    width: 362px;
+    width: 452px;
     background-color: green;
 }
 
 .btn-large.register {
-    width: 362px;
+    width: 452px;
     background-color: red;
 }
 
@@ -43,29 +53,19 @@ button {
     background-color: red;
 }
 
-/* Style Search Bar */
-.search-bar {
-    width: 340px;
-    height: 40px;
-    margin-bottom: 20px;
-    background-color: transparent;
-    border: 2px solid #eeeeee;
-    padding-left: 18px;
-    border-radius: 5px;
-}
-
-
 /* Style Header & Navigation */
 .container {
     border-bottom: 1px solid #eeeeee;
     display: flex;
     justify-content: space-between;
     padding: 20px 40px 20px 40px;
+    margin: 0 auto;
     }
 
 .nav-links {
     list-style: none;
     margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 li {
@@ -90,10 +90,12 @@ li {
     color: #eeeeee;
 }
 
+
 /* Style Section "Hire the best remote dev..." */
 .hero {
     width: 100%;
     display: flex;
+    text-align: center;
 }
 
 .search, .vector-file {
@@ -102,15 +104,91 @@ li {
     text-align: center;
 }
 
-/* .horizontal-rule {
+.search {
+    padding: 8.9%;
+}
+
+.search-bar {
+    width: 452px;
+    height: 56px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 2px solid #eeeeee;
+    padding: 0% 5% 0% 5%;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 42.2px;
+    text-align: left;
+    margin: 0px;
+}
+
+.hero-offer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.horizontal-rule {
     display: flex;
     justify-content: space-between;
     width: 360px;
+    /* padding: 2% 12% 2% 12%; */
 }
 
-hr, .or {
-    display: inline-block;
-}
 hr {
-    width: 160px;
-} */
+    width: 197px;
+    margin: 20px 0px 20px 0px;
+}
+
+.or {
+    margin: 10px;
+    padding: 0px 11px 0px 11px;
+}
+/* Start Section "How it works..." */
+.how-it-works {
+    background: #eeeeee;
+    margin: 0 auto;
+    color: #001f3f;
+    text-align: center;
+    padding: 5%;
+}
+
+/* Style Icon Tabs */
+.icon {
+    display: flex;
+    justify-content: space-between;
+}
+.search-icon-tab {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 15%;
+    padding: 10px;
+}
+.create-icon-tab {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 15%;
+    padding: 10px;
+}
+.payment-icon-tab {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 15%;
+    padding: 10px;
+}
+.build-icon-tab {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 15%;
+    padding: 10px;
+}
+
+/* Style Section "What are you waiting for?" */
+.search-bar-footer {
+    width: 573px;
+    background: none;
+    border: 2px solid #fff;
+    height: 56px;
+    padding: 0% 1% 0% 1%;
+    border-radius: 5px;
+}
