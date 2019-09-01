@@ -1,3 +1,5 @@
+//script of payment 
+
 <script type="text/javascript" src="https://ravesandboxapi.flutterwave.com/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
 <script>
      document.addEventListener("DOMContentLoaded", function(event) {
