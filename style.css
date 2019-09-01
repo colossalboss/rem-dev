@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-landing-color: #001F3F;
+}
+
+p {
+    width: 10%;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+p span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+.landing-li {
+    float: left;
+    padding-right: 20px;
+}
+
+.landing-li a {
+    text-decoration: none;
+}
+
+.landing-li a {
+    color: white;
+}
+
+.landing-ul {
+    list-style-type: none;
+}
+
+ul>li:nth-child(2),
+li:nth-child(3),
+li:nth-child(4),
+li:nth-child(5),
+li:nth-child(6) {
+    float: right;
+}
+
+.landing-page {
+    background: var(--main-landing-color)
+}
+
+.landing-nav {
+    padding: 1rem;
+}
