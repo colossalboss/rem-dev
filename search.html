@@ -10,7 +10,6 @@
         rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="search.css" />
 </head>
 
@@ -18,7 +17,7 @@
     <div class="search-page">
         <nav class="search-nav">
             <div class="search-logo">
-                <h3>RemDev</h3>
+                RemDev
             </div>
             <div class="search-right">
                 <ul class="search-ul">
@@ -28,7 +27,7 @@
                     <li class="search-li"><a href="#">About Us</a></li>
                     <li class="search-li"><a href="#">Login</a></li>
                     <li class="search-li signup">
-                        <a href="#">Sign Up</a>
+                        <a href="./signup.html">Sign Up</a>
                     </li>
                 </ul>
             </div>
@@ -45,14 +44,38 @@
                 </div>
             </div>
         </section>
-        <section class="developers-section">
-            <div class="developers">
-                <div class="developers-filter"></div>
-                <div class="developers-details"></div>
-                <div class="developers-signup"></div>
-            </div>
-        </section>
     </div>
+    <section class="developers-section">
+        <div class="developers">
+            <div class="developers-filter">
+                <div class="filter-1">
+                    <p>filter by:</p>
+                    <select class="input-icon" name="country" id="">
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="canada">canada</option>
+                    </select>
+                    <select class="input-icon" name="price" id="">
+                        <option value="$15/hr">$15/hr</option>
+                        <option value="$20/hr">$20/hr</option>
+                    </select>
+                    <select class="input-icon" name="job-title" id="">
+                        <option value="Front-end..">Front-end...</option>
+                        <option value="Backend-end...">Backend-end...</option>
+                    </select>
+
+                </div>
+                <div class="filter-2">
+                    <p>sort by:</p>
+                    <select class="input-icon" name="rating" id="">
+                        <option value="Top rated">Top rated</option>
+                        <option value="Completed Projects">Completed Projects</option>
+                    </select>
+                </div>
+            </div>
+            <div class="developers-details"></div>
+            <div class="developers-signup"></div>
+        </div>
+    </section>
 </body>
 
 </html>
