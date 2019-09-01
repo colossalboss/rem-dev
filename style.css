@@ -94,6 +94,7 @@ body {
 }
 
 .text-field input {
+  color: white;
   background: none;
 }
 
@@ -262,6 +263,7 @@ margin: 0 auto;
   border-radius: 4px;
   background: none;
   margin: auto;
+  color: white;
 }
 
 #btn-div {
