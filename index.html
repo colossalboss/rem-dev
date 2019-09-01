@@ -5,77 +5,185 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>team_start</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400i,700,900&display=swap"
+            rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
         <div class="landing-page">
             <nav class="landing-nav">
-                <ul class="landing-ul">
-                    <li class="landing-li"><a href="#">RemDev</a></li>
-                    <li class="landing-li"><a href="#">Home</a></li>
-                    <li class="landing-li"><a href="#">About Us</a></li>
-                    <li class="landing-li"><a href="#">Developers</a></li>
-                    <li class="landing-li"><a href="#">Login</a></li>
-                    <li class="landing-li"><a href="#">Sign Up</a></li>
-                </ul>
+                <div class="landing-logo">
+                    <h3>RemDev</h3>
+                </div>
+                <div class="landing-right">
+                    <ul class="landing-ul">
+                        <li class="landing-li">
+                            <a href="./search.html">Browse developers</a>
+                        </li>
+                        <li class="landing-li"><a href="#">About Us</a></li>
+                        <li class="landing-li"><a href="#">Login</a></li>
+                        <li class="landing-li signup">
+                            <a href="signup.html">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+
             </nav>
-            <br />
             <hr />
             <section>
-                <div class="landing-page_primary">
-                    <h1>Hire the best remote</h1>
-                    <h1>developers across nigeria</h1>
-                    <h4>
-                        Get your projects completed in no time by capable hands
-                    </h4>
-                    <input
-                        type="text"
-                        placeholder="what skills are you looking for?"
-                    />
-                    <br />
-                    <br />
-                    <button>Find Developers</button>
-                    <p><span>Or</span></p>
-                    <button>Register as a Developer</button>
+              <div class="first-row">
+                <div class=" box">
+                    <div class="text">
+                      <h1>Hire the best remote</h1>
+                      <h2>developers across nigeria</h2>
+                      <h4>
+                          Get your projects completed in no time by capable hands
+                      </h4>
+                    </div>
+                    <div class="text-field">
+                      <input
+                          type="text"
+                          placeholder="what skills are you looking for?"
+                      />
+                    </div>
+                    <div class="btn">
+                      <button class="green-btn">Find Developers</button>
+                      <div class="line-div">
+                        <div class="line">
+                          <hr>
+                        </div>
+                        <div class="line-text">
+                          <p>Or</p>
+                        </div>
+                        <div class="line">
+                          <hr>
+                        </div>
+                      </div>
+                      <button class="red-btn">Register as a Developer</button>
+                    </div>
+                  </div>
+                  <div class="box image-box">
+                    <p class="img-center"><img class="big-image" src="https://via.placeholder.com/400x400.png" alt=""></p>
+                  </div>
                 </div>
-                <div style="text-align: center">
+              </section>
+              <section>
+                <div style="background-color: white">
+                  <div class="works-how">
                     <h1>How it works</h1>
                     <h4>Four easy steps to complete your project</h4>
-                    <table></table>
+                  </div>
+                  <div class="how">
+                    <div class="sub-how">
+                      <div class="icon">
+                        <p><i class="fa fa-search" aria-hidden="true"></i></p>
+                      </div>
+                      <div class="align-text">
+                        <h3>Search for developers</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus maxime similique reiciendis veritatis quidem laboriosam nostrum dolores assumenda dolore eaque.</p>
+                      </div>
+                    </div>
+                    <div class="sub-how">
+                      <div class="icon">
+                        <p><i class="fa fa-pencil" aria-hidden="true"></i></p>
+                      </div>
+                      <div class="align-text">
+                        <h3>Craete project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus maxime similique reiciendis veritatis quidem laboriosam nostrum dolores assumenda dolore eaque.</p>
+                      </div>
+                    </div>
+                    <div class="sub-how">
+                      <div class="icon">
+                        <p><i class="fa fa-check-square" aria-hidden="true"></i></p>
+                      </div>
+                      <div class="align-text">
+                        <h3>Make payment</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus maxime similique reiciendis veritatis quidem laboriosam nostrum dolores assumenda dolore eaque.</p>
+                      </div>
+                    </div>
+                    <div class="sub-how">
+                      <div class="icon">
+                        <p><i class="fa fa-money" aria-hidden="true"></i></p>
+                      </div>
+                      <div class="align-text">
+                        <h3>Build project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus maxime similique reiciendis veritatis quidem laboriosam nostrum dolores assumenda dolore eaque.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div style="text-align: center">
-                    <h1>What our clients say</h1>
+              </section>
+              <section>
+                <div>
+                  <div class="rep align-text">
+                    <h2>What our clients say</h2>
                     <h4>when we promise we deliver</h4>
-                    <textarea name="" id="" cols="70" rows="10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas perferendis dolorem nobis iure maiores numquam necessitatibus accusamus hic possimus dicta?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores delectus alias voluptas totam libero voluptates unde labore aspernatur magnam laborum, numquam est iure ut doloribus, illo suscipit. Iusto, consectetur non.                
-            </textarea
-                    >
+                  </div>
+                  <div>
+                    <div class="flexy">
+                      <div class="quote-sign">
+                          <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <div class="quote-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nihil consequatur similique vel tempora nam, distinctio sequi temporibus corporis ea veniam iure officia earum? Obcaecati error sed dolore animi cumque cum doloremque esse sunt quis, molestias, rem similique delectus reiciendis, at debitis aliquam soluta harum magni id fuga tenetur? Totam corporis deleniti numquam repellat quam nihil, obcaecati sint vero maxime porro laudantium debitis neque sequi iure nostrum. Debitis sit soluta placeat animi aspernatur cupiditate nemo esse nam quae numquam saepe, corporis eius temporibus hic! Tempore et nisi velit ipsum exercitationem, ex asperiores id libero saepe nobis fugiat eos recusandae delectus.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nihil consequatur similique vel tempora nam, distinctio sequi temporibus corporis ea veniam iure officia earum? Obcaecati error sed dolore animi cumque cum doloremque esse sunt quis, molestias, rem similique delectus reiciendis, at debitis aliquam soluta harum magni id fuga tenetur? Totam corporis deleniti numquam repellat quam nihil, obcaecati sint vero maxime porro laudantium debitis neque sequi iure nostrum. Debitis sit soluta placeat animi aspernatur cupiditate nemo esse nam quae numquam saepe, corporis eius temporibus hic! Tempore et nisi velit ipsum exercitationem, ex asperiores id libero saepe nobis fugiat eos recusandae delectus.
+                      </div>
+                    </div>
+                    <div class="author">
+                      <img src="https://via.placeholder.com/100" alt="">
+                      <div class="ceo">
+                        <h2>Victor Ogunmoye</h2>
+                        <p>CEO RemDev</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div style="text-align: center">
-                    <h1>Completed Projects</h1>
+              </section>
+              <section>
+                <div class="projects">
+                  <div class="align-text top-space">
+                    <h1 >Completed Projects</h1>
+                  </div>
                     <div class="row">
-                        <div class="col">1</div>
-                        <div class="col">2</div>
-                        <div class="col">3</div>
-                        <div class="col">4</div>
+                        <div class="col"><p><i class="fa fa-facebook" aria-hidden="true"></i></p></div>
+                        <div class="col"><p><i class="fa fa-twitter" aria-hidden="true"></i></p></div>
+                        <div class="col"><p><i class="fa fa-slack" aria-hidden="true"></i></p></div>
+                        <div class="col"><p><i class="fa fa-google" aria-hidden="true"></i></p></div>
                     </div>
                 </div>
-                <div style="text-align: center">
+                <div class="sm">
+                  <div class="align-text">
                     <h1>What are you waiting for?</h1>
                     <h5>Lets help you bring your dream to life</h5>
+                  </div>
+                  <div class="inp">
                     <input
                         type="text"
                         name=""
                         id=""
                         placeholder="what skills set are you looking for?"
                     />
-                    <br />
-                    <br />
-                    <button>Register as developer</button>
-                    or
-                    <button>Find Developers</button>
+                  </div>
+                      <div class="btn" id="btn-div">
+                        <button class="green-btn">Find Developers</button>
+                        <div class="line-div">
+                          <div class="line">
+                            <hr>
+                          </div>
+                          <div class="line-text">
+                            <p>Or</p>
+                          </div>
+                          <div class="line">
+                            <hr>
+                          </div>
+                        </div>
+                        <button class="red-btn">Register as a Developer</button>
+                      </div>
                 </div>
             </section>
             <hr />
@@ -84,6 +192,11 @@
                 <a style="float:right" href="twitter.com">twitter</a>
             </footer>
         </div>
+        //form of pay botton
+
+        <form style="text-align: center; padding-top: 80px;">
+  <button type="button" style="cursor:pointer;" value="Pay Now" id="submit">Pay Now</button>
+</form>
         <script src="app.js"></script>
     </body>
 </html>
