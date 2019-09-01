@@ -115,3 +115,9 @@ body {
     font-weight: 200;
     color: rgba(255, 255, 255, 0.603);
 }
+
+.search-logo a {
+  color: #13C969;
+  font-size: 2em;
+  text-decoration: none;
+}
