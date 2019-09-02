@@ -136,11 +136,13 @@ body {
     border-radius: 5px;
 }
 
+/* DEVELOPER FILTER */
 .developers-filter {
     display: flex;
     padding: 1.5rem;
     justify-content: space-between;
     background: rgba(240, 239, 239, 0.541);
+    margin-bottom: 4rem;
 }
 
 .filter-left,
@@ -181,7 +183,14 @@ body {
     color: rgb(48, 47, 53);
 }
 
+.yellow-item {
+    color: #FFBF00;
+}
 
+.number {
+    color: rgb(104, 100, 100);
+    font-weight: 300;
+}
 
 .filter-1 select,
 .filter-2 select {
@@ -205,34 +214,51 @@ body {
     word-break: normal;
 }
 
-.developer-details{
+/* DEVELOPER DETAILS */
+.developer-details {
     position: relative;
-    margin: 3rem;
+    margin: 2rem 3rem;
     display: flex;
 }
-.developer-detail{
+
+.developer-detail {
     display: flex;
     flex-direction: column;
 }
 
-.developer-name{
+.developer-name {
     font-size: 34px;
     line-height: 42px;
     letter-spacing: 0.002em;
     margin-bottom: .5rem;
 }
-.developer-list{
+
+.developer-list {
     display: flex;
     list-style: none;
     margin-bottom: 1rem;
 }
 
-.developer-list_item{
-    padding-right: 10px;
+.developer-list_item {
+    padding-right: 7px;
     font-weight: bold;
     font-size: 15px;
 }
-.developer-img{
+
+.developer-list_frontend {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.developer-list_item::before {
+    content: "•";
+    color: rgb(190, 200, 233);
+    display: inline-block;
+    width: 1em;
+    margin-left: 1em
+}
+
+.developer-img {
     margin: 0 1rem;
 }
 
@@ -240,28 +266,38 @@ body {
     width: 370px;
     height: 270px;
 }
-.developer-skills{
-    margin-top: auto;
-}
 
-.developer-text{
+
+.developer-text {
     font-size: 13px;
     margin-bottom: auto;
 }
-.developer-skills_list{
+
+.view-profile {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.view-btn {
+    background: var(--primary-color);
+    padding: 15px 25px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+/* DEVELOPER SKILLS */
+
+.developer-skills_list {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
     width: 703px;
 }
-.yellow-item{
-    color: yellow;
-}
-.number{
-    color: rgb(104, 100, 100);
-    font-weight: 200;
-}
-.developer-skills_item{
+
+.developer-skills_item {
     padding: 5px 15px;
     border-radius: 5px;
     outline: none;
@@ -272,17 +308,9 @@ body {
     margin: 10px 10px 10px 0;
 }
 
-.view-profile{
-    position: absolute;
-    top: 0;
-    right: 0;
+.developer-skills {
+    margin-top: auto;
 }
-.view-btn{
-    background: var(--primary-color);
-    padding: 15px 25px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    color: white;
-}
+
+/* SIGNUP */
+
