@@ -440,12 +440,22 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 15px 10px;
 }
 .footer-2_icons{
     width: 24px;
     height: 24px;
-    margin: 5px;
+    margin: 0 10px;
+    fill: white;
+}
+.footer-2_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .footer-2_right{
     padding: 1rem;
+}
+.footer-2_remdev{
+    color: var(--primary-color);
 }
