@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', 'sans-serif';
+
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --main-color: #001F3F;
+}
+
+.landing-li {
+  color: white;
+}
+
+.landing-li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding: 30px 20px;
+}
+
+.landing-ul {
+  list-style-type: none;
+  display: flex;
+  align-items: baseline;
+}
+
+
+.landing-li a {
+  text-decoration: none;
+}
+
+.landing-li a {
+  color: white;
+}
+
+.landing-ul {
+  list-style-type: none;
+}
+
+
+.landing-page {
+  background: var(--main-color)
+}
+
+.landing-nav {
+  color: white;
+  padding: 1.3rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.increasefont {
+  font-size: 35px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  text-decoration: none;
+}
+
+
+.signup {
+  background: rgba(104, 226, 104, 0.932);
+  border-radius: 5px;
+  padding: 12px 15px;
+}
+
+
+/* Addition */
+.first-row {
+  display: flex;
+  padding: 0.8em;
+}
+
+.box {
+  width: 50%;
+}
+
+.big-image {
+  margin-top: 0.5em;
+}
+
+.text {
+  padding: 3.5em 1.5em 1.5em;
+  color: #fff;
+  line-height: 2em;
+}
+
+.text h4 {
+  color: #9e9e9e7a;
+}
+
+.text-field {
+  padding: 1.5em;
+}
+
+.text-field input {
+  color: white;
+  background: none;
+}
+
+.text-field input {
+  padding: 0.5em;
+  width: 70%;
+  border-radius: 4px;
+}
+
+.btn {
+  padding: 1.5em;
+}
+
+.btn button {
+  width: 70%;
+  padding: 0.5em;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.green-btn {
+  background-color: green;
+}
+
+.red-btn {
+  background-color: red;
+}
+
+.line-div {
+  display: flex;
+  padding: 0.5em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.line {
+  width: 33%;
+  margin-top: 0.5em;
+}
+
+.line-text {
+  padding: 0 0.3em;
+}
+
+.image-box {
+  margin: auto;
+}
+
+.img-center {
+  text-align: center;
+}
+
+.big-image {
+  border-radius: 10px;
+}
+
+.how {
+  display: flex;
+}
+
+.sub-how {
+  width: 24%;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+
+.align-text {
+  text-align: center;
+  padding: 0.5em;
+  margin: 1em;
+}
+
+.fa {
+  font-size: 2em;
+  text-align: center;
+}
+
+.icon {
+  text-align: center;
+}
+
+.works-how {
+  text-align: center;
+  margin: 2.5em;
+  padding: 0.5em;
+}
+
+.rep {
+  color: #fff;
+}
+
+.flexy {
+  width: 70%;
+  display: flex;
+  margin: auto;
+  padding: 1em;
+  background-color: #fff;
+}
+
+.quote-sign {
+  width: 10%;
+}
+
+.quote-text {
+  width: 85%;
+}
+
+.author {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  padding: 1em;
+  background-color: #fff;
+}
+
+.author img {
+  border-radius: 50%;
+}
+
+.ceo {
+  margin: 1.5em 2.5em;
+}
+
+.top-space {
+  padding-top: 2em;
+}
+
+.projects {
+  background-color: #fff;
+}
+
+.row {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.col {
+  border: 1px solid grey;
+  width: 20%;
+  margin-bottom: 2.5em;
+}
+
+.col .fa {
+  font-size: 100px;
+}
+
+.sm {
+  width: 60%;
+  margin: auto;
+}
+
+/* .inp {
+margin: 0 auto;
+} */
+
+.inp input {
+  display: block;
+  width: 70%;
+  padding: 0.5em;
+  border-radius: 4px;
+  background: none;
+  margin: auto;
+  color: white;
+}
+
+#btn-div {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
