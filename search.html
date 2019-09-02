@@ -8,8 +8,8 @@
     <title>team_start</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400i,700,900&display=swap"
         rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="search.css" />
 </head>
 
@@ -48,32 +48,213 @@
     <section class="developers-section">
         <div class="developers">
             <div class="developers-filter">
-                <div class="filter-1">
-                    <p>filter by:</p>
-                    <select class="input-icon" name="country" id="">
-                        <option value="Nigeria">Nigeria</option>
-                        <option value="canada">canada</option>
-                    </select>
-                    <select class="input-icon" name="price" id="">
-                        <option value="$15/hr">$15/hr</option>
-                        <option value="$20/hr">$20/hr</option>
-                    </select>
-                    <select class="input-icon" name="job-title" id="">
-                        <option value="Front-end..">Front-end...</option>
-                        <option value="Backend-end...">Backend-end...</option>
-                    </select>
-
+                <div class="filter-left">
+                    <div class="filter-1">
+                        <p class="filter-1_header">Filter by:</p>
+                        <select name="country" id="">
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="canada">canada</option>
+                        </select>
+                    </div>
+                    <div class="filter-1">
+                        <select class="input-icon" name="country" id="">
+                            <option value="$15/hr">$15/hr</option>
+                            <option value="$20/hr">$20/hr</option>
+                        </select>
+                    </div>
+                    <div class="filter-1">
+                        <select name="country" id="">
+                            <option value="Front-end...">Front-end...</option>
+                            <option value="Back-end...">Back-end...</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="filter-2">
-                    <p>sort by:</p>
-                    <select class="input-icon" name="rating" id="">
-                        <option value="Top rated">Top rated</option>
-                        <option value="Completed Projects">Completed Projects</option>
-                    </select>
+                <div class="filter-right">
+                    <div class="filter-2">
+                        <p class="filter-2_header">Sort by:</p>
+                        <select class="input-icon" name="rating" id="">
+                            <option value="Top rated">Top rated</option>
+                            <option value="Completed Projects">Completed Projects</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-            <div class="developers-details"></div>
-            <div class="developers-signup"></div>
+            <div class="developer-details">
+                <div class="developer-img">
+                    <img src="./asset/pic1.jpg" alt="developer picture" class="developer-img_main">
+                </div>
+                <div class="developer-detail">
+                    <p class="developer-name">John Doe</p>
+                    <ul class="developer-list">
+                        <li class="developer-list_item">Front-end Developer</li>
+                        <li class="developer-list_item">Nigeria</li>
+                        <li class="developer-list_item">$15/hr</li>
+                        <li class="developer-list_item yellow-item">5.0 <span class="number">(400)</span></li>
+                    </ul>
+                    <p class="developer-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
+                        blanditiis sit amet cupiditate voluptatem accusamus dolor. Adipisci officiis vel at sed quas
+                        quasi obcaecati. Et neque ipsam vero explicabo nam!</p>
+                    <div class="developer-skills">
+                        <ul class="developer-skills_list">
+                            <li class="developer-skills_item">HTML</li>
+                            <li class="developer-skills_item">CSS</li>
+                            <li class="developer-skills_item">Javascript</li>
+                            <li class="developer-skills_item">PHP</li>
+                            <li class="developer-skills_item">Python</li>
+                            <li class="developer-skills_item">Django</li>
+                            <li class="developer-skills_item">React</li>
+                            <li class="developer-skills_item">Vue JS</li>
+                            <li class="developer-skills_item">Node JS</li>
+                            <li class="developer-skills_item">Lorem Ipsum</li>
+                            <li class="developer-skills_item">+10 more</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="view-profile">
+                    <button class="view-btn">View profile</button>
+                </div>
+            </div>
+            <div class="developer-details">
+                <div class="developer-img">
+                    <img src="./asset/pic1.jpg" alt="developer picture" class="developer-img_main">
+                </div>
+                <div class="developer-detail">
+                    <p class="developer-name">Mike Doe</p>
+                    <ul class="developer-list">
+                        <li class="developer-list_item">Front-end Developer</li>
+                        <li class="developer-list_item">Nigeria</li>
+                        <li class="developer-list_item">$15/hr</li>
+                        <li class="developer-list_item yellow-item">5.0 <span class="number">(400)</span></li>
+                    </ul>
+                    <p class="developer-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
+                        blanditiis sit amet cupiditate voluptatem accusamus dolor. Adipisci officiis vel at sed quas
+                        quasi obcaecati. Et neque ipsam vero explicabo nam!</p>
+                    <div class="developer-skills">
+                        <ul class="developer-skills_list">
+                            <li class="developer-skills_item">HTML</li>
+                            <li class="developer-skills_item">CSS</li>
+                            <li class="developer-skills_item">Javascript</li>
+                            <li class="developer-skills_item">PHP</li>
+                            <li class="developer-skills_item">Python</li>
+                            <li class="developer-skills_item">Django</li>
+                            <li class="developer-skills_item">React</li>
+                            <li class="developer-skills_item">Vue JS</li>
+                            <li class="developer-skills_item">Node JS</li>
+                            <li class="developer-skills_item">Lorem Ipsum</li>
+                            <li class="developer-skills_item">+10 more</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="view-profile">
+                    <button class="view-btn">View profile</button>
+                </div>
+            </div>
+            <div class="developer-details">
+                <div class="developer-img">
+                    <img src="./asset/pic1.jpg" alt="developer picture" class="developer-img_main">
+                </div>
+                <div class="developer-detail">
+                    <p class="developer-name">Jane Doe</p>
+                    <ul class="developer-list">
+                        <li class="developer-list_item">Front-end Developer</li>
+                        <li class="developer-list_item">Nigeria</li>
+                        <li class="developer-list_item">$15/hr</li>
+                        <li class="developer-list_item yellow-item">5.0 <span class="number">(400)</span></li>
+                    </ul>
+                    <p class="developer-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
+                        blanditiis sit amet cupiditate voluptatem accusamus dolor. Adipisci officiis vel at sed quas
+                        quasi obcaecati. Et neque ipsam vero explicabo nam!</p>
+                    <div class="developer-skills">
+                        <ul class="developer-skills_list">
+                            <li class="developer-skills_item">HTML</li>
+                            <li class="developer-skills_item">CSS</li>
+                            <li class="developer-skills_item">Javascript</li>
+                            <li class="developer-skills_item">PHP</li>
+                            <li class="developer-skills_item">Python</li>
+                            <li class="developer-skills_item">Django</li>
+                            <li class="developer-skills_item">React</li>
+                            <li class="developer-skills_item">Vue JS</li>
+                            <li class="developer-skills_item">Node JS</li>
+                            <li class="developer-skills_item">Lorem Ipsum</li>
+                            <li class="developer-skills_item">+10 more</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="view-profile">
+                    <button class="view-btn">View profile</button>
+                </div>
+            </div>
+            <div class="developer-details">
+                <div class="developer-img">
+                    <img src="./asset/pic1.jpg" alt="developer picture" class="developer-img_main">
+                </div>
+                <div class="developer-detail">
+                    <p class="developer-name">Susan Doe</p>
+                    <ul class="developer-list">
+                        <li class="developer-list_item">Front-end Developer</li>
+                        <li class="developer-list_item">Nigeria</li>
+                        <li class="developer-list_item">$15/hr</li>
+                        <li class="developer-list_item yellow-item">5.0 <span class="number">(400)</span></li>
+                    </ul>
+                    <p class="developer-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
+                        blanditiis sit amet cupiditate voluptatem accusamus dolor. Adipisci officiis vel at sed quas
+                        quasi obcaecati. Et neque ipsam vero explicabo nam!</p>
+                    <div class="developer-skills">
+                        <ul class="developer-skills_list">
+                            <li class="developer-skills_item">HTML</li>
+                            <li class="developer-skills_item">CSS</li>
+                            <li class="developer-skills_item">Javascript</li>
+                            <li class="developer-skills_item">PHP</li>
+                            <li class="developer-skills_item">Python</li>
+                            <li class="developer-skills_item">Django</li>
+                            <li class="developer-skills_item">React</li>
+                            <li class="developer-skills_item">Vue JS</li>
+                            <li class="developer-skills_item">Node JS</li>
+                            <li class="developer-skills_item">Lorem Ipsum</li>
+                            <li class="developer-skills_item">+10 more</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="view-profile">
+                    <button class="view-btn">View profile</button>
+                </div>
+            </div>
+            <div class="developer-details">
+                <div class="developer-img">
+                    <img src="./asset/pic1.jpg" alt="developer picture" class="developer-img_main">
+                </div>
+                <div class="developer-detail">
+                    <p class="developer-name">James Doe</p>
+                    <ul class="developer-list">
+                        <li class="developer-list_item">Front-end Developer</li>
+                        <li class="developer-list_item">Nigeria</li>
+                        <li class="developer-list_item">$15/hr</li>
+                        <li class="developer-list_item yellow-item">5.0 <span class="number">(400)</span></li>
+                    </ul>
+                    <p class="developer-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
+                        blanditiis sit amet cupiditate voluptatem accusamus dolor. Adipisci officiis vel at sed quas
+                        quasi obcaecati. Et neque ipsam vero explicabo nam!</p>
+                    <div class="developer-skills">
+                        <ul class="developer-skills_list">
+                            <li class="developer-skills_item">HTML</li>
+                            <li class="developer-skills_item">CSS</li>
+                            <li class="developer-skills_item">Javascript</li>
+                            <li class="developer-skills_item">PHP</li>
+                            <li class="developer-skills_item">Python</li>
+                            <li class="developer-skills_item">Django</li>
+                            <li class="developer-skills_item">React</li>
+                            <li class="developer-skills_item">Vue JS</li>
+                            <li class="developer-skills_item">Node JS</li>
+                            <li class="developer-skills_item">Lorem Ipsum</li>
+                            <li class="developer-skills_item">+10 more</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="view-profile">
+                    <button class="view-btn">View profile</button>
+                </div>
+            </div>
+            <div class="developers-signup">signup</div>
         </div>
     </section>
 </body>
