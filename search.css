@@ -98,6 +98,7 @@ body {
     font-size: 20px;
     color: white;
     margin-left: 18px;
+    cursor: pointer;
 }
 
 .header-inp {
@@ -287,7 +288,9 @@ body {
     border-radius: 5px;
     font-size: 20px;
     color: white;
+    cursor: pointer;
 }
+
 /* DEVELOPER SKILLS */
 
 .developer-skills_list {
@@ -313,14 +316,15 @@ body {
 }
 
 /* SIGNUP */
-.developers-signup{
+.developers-signup {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 2rem 0;
 }
-.signup-btn{
+
+.signup-btn {
     background: var(--primary-color);
     border-radius: 5px;
     padding: 15px 35px;
@@ -329,9 +333,119 @@ body {
     margin-top: 1rem;
     outline: none;
     border: none;
+    cursor: pointer;
 }
-.signup-header{
+
+.signup-header {
     color: #001F3F;
     font-size: 35px;
     font-weight: 600;
+}
+
+/*COMPANY LOGOS*/
+.company-logos {
+    display: flex;
+    margin: 3rem 0;
+    justify-content: space-between;
+}
+
+.company-logo {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #001F3F;
+    margin: 0 -16px;
+}
+
+/* FOOTER */
+.footer {
+    background: var(--main-color);
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+
+.footer-1_primary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.footer-1_header {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-1_text {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.footer-search {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_inp {
+    width: 100%;
+    padding: 17px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    background: var(--main-color);
+    border: 1px 1px solid white;
+    color: white;
+}
+
+.footer-1_btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.footer-1_register,
+.footer-1_find {
+    outline: none;
+    border: none;
+    padding: 13px 15px;
+    font-size: 22px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 240px;
+}
+
+.footer-1_register {
+    background: #C92813;
+}
+
+.footer-1_find {
+    background: var(--primary-color);
+}
+
+.footer-2 {
+    border-top: 2px solid white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-2_icons{
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
+.footer-2_right{
+    padding: 1rem;
 }
