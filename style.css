@@ -57,6 +57,13 @@ body {
   justify-content: space-between;
 }
 
+.increasefont {
+  font-size: 35px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  text-decoration: none;
+}
+
 
 .signup {
   background: rgba(104, 226, 104, 0.932);
