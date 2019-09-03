@@ -440,18 +440,19 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 15px 10px;
+    padding: 15px 20px;
 }
 .footer-2_icons{
     width: 24px;
     height: 24px;
-    margin: 0 10px;
+    margin: 0 15px;
     fill: white;
 }
 .footer-2_left{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 22px;
 }
 .footer-2_right{
     padding: 1rem;
