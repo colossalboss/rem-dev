@@ -47,7 +47,7 @@ body {
 
 .search-page {
     background: var(--main-color);
-    min-width: 1200px;
+    min-width: 1300px;
 }
 
 .search-nav {
@@ -362,7 +362,7 @@ body {
 
 /* FOOTER */
 .bottom-section{
-    min-width: 1200px;
+    min-width: 1300px;
 }
 .footer {
     background: var(--main-color);
