@@ -217,6 +217,9 @@ body {
 }
 
 /* DEVELOPER DETAILS */
+.developers{
+    min-width: 1300px;
+}
 .developer-details {
     position: relative;
     margin: 2rem 3rem;
