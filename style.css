@@ -1,0 +1,219 @@
+/* Style body & general content */
+html {
+    box-sizing: border-box;
+    padding: 0px auto;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #001f3f;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #eeeeee;
+    text-align: center;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+h2 {
+    margin: 0px;
+}
+
+/* Style buttons */
+button {
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    color: #eeeeee;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+}
+
+.btn-small {
+    width: 122px;
+    background-color: green;
+}
+
+.btn-large.find {
+    width: 452px;
+    background-color: green;
+}
+
+.btn-large.register {
+    width: 452px;
+    background-color: red;
+}
+
+.btn-medium.find {
+    width: 242px;
+    background-color: green;
+}
+
+.btn-medium.register {
+    width: 242px;
+    background-color: red;
+}
+
+/* Style Header & Navigation */
+.container {
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    margin: 0px auto;
+    }
+
+.nav-links {
+    list-style: none;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    display: inline-block;
+    margin-left: 60px;
+    vertical-align: center;
+}
+
+
+/* Logo Styles */
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    margin: 16px 0px 16px;
+}
+
+/* Style footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+.social {
+    color: #eeeeee;
+}
+
+
+/* Style Section "Hire the best remote dev..." */
+.hero {
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.search, .vector-file {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.search {
+    padding: 8.9%;
+}
+
+.search-bar {
+    width: 452px;
+    height: 56px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 2px solid #eeeeee;
+    padding: 0% 5% 0% 5%;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 42.2px;
+    text-align: left;
+    margin: 0px;
+}
+
+.hero-offer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.horizontal-rule {
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+    /* padding: 2% 12% 2% 12%; */
+}
+
+hr {
+    width: 197px;
+    margin: 20px 0px 20px 0px;
+}
+
+.or {
+    margin: 10px;
+    padding: 0px 11px 0px 11px;
+}
+/* Start Section "How it works..." */
+.how-it-works {
+    background: #eeeeee;
+    margin: 0 auto;
+    color: #001f3f;
+    text-align: center;
+    padding: 5%;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
+.i-tab {
+    margin: 0px 30px;
+    width: 231px;
+    height: 243.84px;
+    border: 1px solid #001f3f;
+    border-radius: 5px;
+    padding: 10px
+}
+
+.svg-icon {
+    width: 70px;
+    height: auto;
+}
+
+/* Style Section "Projects" */
+.projects {
+    background-color: white;
+    color: #001f3f;
+    padding: 40px;
+}
+
+.social-logo-box {
+    display: flex;
+    justify-content: center;
+    padding: 40px 40px 0px 40px;
+}
+
+.social-logo {
+    border: 1px solid #001f3f;
+    width: 144px;
+    height: 144px;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0px 30px;
+}
+
+.social-logo-image {
+    width: 100px;
+    height: auto;
+}
+
+/* Style Section "What are you waiting for?" */
+.search-bar-footer {
+    width: 573px;
+    background: none;
+    border: 2px solid #fff;
+    height: 56px;
+    padding: 0% 1% 0% 1%;
+    border-radius: 5px;
+}
