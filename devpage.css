@@ -1,0 +1,182 @@
+
+* {
+	margin: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+nav {
+	background-color: #2B577A;
+	width: 100%;
+}
+
+nav ul ol a {
+	color: white;
+	font-size: 20pt;
+	font-style: italic;
+	font-weight: bolder;
+	font-family: cursive, Helvetica, sans-serif;
+}
+
+main {
+	margin: 100px 100px 0 100px;
+}
+
+.firstcard {
+	width: 100%;
+	height: 200px;
+	padding: 30px;
+	border-radius: 10px;
+	border-style: groove;
+	font-size: 11pt;
+	line-height: 14pt;
+	/*box-shadow: 2px 2px gray;*/
+}
+
+.firstcard img {
+	/*width: 100%;*/
+	height: 200px;
+	float: left;
+	margin-right: 20px;
+}
+
+.btn {
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.firstcard h4 {
+	font-family: Arial, Helvetica, Times New Roman;
+	font-size: 14pt;
+	margin-bottom: 1px;
+}
+
+.firstcard p {
+	margin-bottom: 10px;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.btn1{
+    border: none;
+  color: black;
+  padding: 3px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #bfbfbf;
+}
+
+.firstcard .row .lastbtn {
+	background-color: white;
+}
+
+.checked {
+    color: orange;
+}
+
+.secondcard {
+	width: 100%;
+	height: 330px;
+	padding: 30px;
+	border-radius: 10px;
+	border-style: groove;
+	font-size: 11pt;
+	margin-top: 12px;
+	line-height: 14pt;
+}
+
+.secondcard header {
+	margin-bottom: 30px;
+	font-size: 14pt;
+	/*margin-left: 5px;*/
+}
+
+.thirdcard {
+	width: 100%;
+	height: 300px;
+	padding: 30px;
+	border-radius: 10px;
+	border-style: groove;
+	font-size: 11pt;
+	line-height: 14pt;
+}
+
+.fourthcard {
+	width: 100%;
+	height: 130px;
+	padding: 30px;
+	border-radius: 10px;
+	border-style: groove;
+	font-size: 11pt;
+	margin-top: 12px;
+	line-height: 14pt;
+}
+
+.fourthcard p {
+	margin-bottom: 50px;
+	font-size: 14pt;
+	/*margin-left: 5px;*/
+}
+
+.fifthcard {
+	width: 100%;
+	height: 630px;
+	padding: 30px;
+	border-radius: 10px;
+	border-style: groove;
+	font-size: 11pt;
+	margin-top: 12px;
+	line-height: 14pt;
+}
+
+.fifthcard .portimg img {
+	width: 200px;
+	height: 200px;
+	float: left;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.fifthcard .portimg p {
+	font-weight: bold;
+}
+
+.fifthcard .port {
+	font-family: Arial, Times New Roman, sans-serif;
+	margin-bottom: 50px;
+	font-size: 14pt;
+}
+
+.fifthcard table.second {
+	margin-top: 30px;
+}
+
+.foot {
+	width: 80px;
+	margin: 20px auto 0 auto; 
+}
+
+.foot a {
+	color: green;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+
