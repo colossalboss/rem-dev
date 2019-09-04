@@ -9,6 +9,16 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.increasefont {
+    font-size: 35px;
+    font-family: 'Pacifico', cursive;
+}
+
 :root {
     --main-color: #001F3F;
     --primary-color: #13C969;
@@ -107,6 +117,7 @@ body {
     padding: 17px;
     border-radius: 5px;
     outline: none;
+    color: white;
     font-size: 20px;
     background: var(--main-color);
     border: 1px 1px solid white;
