@@ -57,6 +57,13 @@ body {
   justify-content: space-between;
 }
 
+.increasefont {
+  font-size: 35px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  text-decoration: none;
+}
+
 
 .signup {
   background: rgba(104, 226, 104, 0.932);
@@ -94,6 +101,7 @@ body {
 }
 
 .text-field input {
+  color: white;
   background: none;
 }
 
@@ -262,6 +270,7 @@ margin: 0 auto;
   border-radius: 4px;
   background: none;
   margin: auto;
+  color: white;
 }
 
 #btn-div {
