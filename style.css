@@ -217,3 +217,146 @@ hr {
     padding: 0% 1% 0% 1%;
     border-radius: 5px;
 }
+
+/* add top margin to "what-are-you-waiting-for" */
+.what-are-you-waiting-for{
+    margin-top: 2rem;
+}
+
+/* adding media queries */
+@media all and (max-width: 1300px){
+body{
+    max-width: 100vw;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+    .social-logo-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+        /* margin: auto; */
+    }
+
+    
+    
+}
+
+@media all and (max-width: 1050px){
+
+    .hero{
+        display:grid;
+        grid-template-columns: 1fr;
+        margin-left: 10rem;
+    }
+    .search h1{
+        width: 50vh;
+    }
+
+    .how-it-works{
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+    .how-it-works div{
+       
+        height:auto;  
+    }
+
+    .projects{
+        margin: auto;
+    }
+    .projects{
+        margin-left: 10vw;
+    }
+
+    .social-logo-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+        /* margin: auto; */
+    }
+
+
+    
+  }
+  @media all and (max-width: 920px){
+
+    .how-it-works{
+        width: 90vw;
+        margin-left: 10vw;
+    }
+
+    .how-it-works div{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        height:auto;
+        margin: auto auto;
+        width: 80vw;
+        
+       
+    }
+
+    .how-it-works p{
+        font-size: 1.3rem;
+    }
+    .how-it-works h1{
+        font-size: 1.8rem;
+    }
+
+    main{
+        margin: 5vw;
+    }
+
+    .clients{
+        margin-top: 2rem;
+    }
+
+    .social-logo-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        /* margin: auto; */
+    }
+
+    .projects{
+        margin-left: 10vw;
+    }
+
+  }
+  
+  @media all and (max-width: 600px){
+    .hero{
+        
+        margin-left: 5rem;
+        margin-left: auto;
+    }
+
+    .how-it-works div{
+        width: 75vw;
+    }
+
+    .icon p{
+        width: auto;
+        padding: 1rem;
+    }
+    
+  }
+
+  @media all and (max-width: 400px){
+    /* .projects{
+        width: 80vw;
+    } */
+
+    .social-logo-box{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        /* margin: auto; */
+    }
+
+  }
