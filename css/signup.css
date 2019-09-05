@@ -58,7 +58,7 @@ li {
     text-decoration: none;
     color: rgb(46, 172, 204);
 }
- 
+
 .form {
     position: relative;
     z-index: 1;
@@ -107,6 +107,24 @@ button {
     color: #ffffff;
     font-size: 14px;
     cursor: pointer;
+}
+
+.signup-page input[type="submit"] {
+
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: 0;
+    background: #4caf54;
+    width: 150px;
+    height: 40px;
+    ;
+    border: 0%;
+    border-radius: 5px;
+    text-align: center;
+    float: right;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    
 }
 
 .message {
