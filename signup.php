@@ -68,7 +68,7 @@
             $check = mysqli_query($db, "SELECT * FROM developer WHERE email = '".$email."' || password = '".md5($pwd)."'") or die(mysqli_error($db));
             
                 if(mysqli_num_rows($check) == 0){ 
-                    $insert = mysqli_query($db, "INSERT INTO developer(developer_FirstName, developer_LastName, email, password, phone_Number) VALUES (
+                    $insert = mysqli_query($db, "INSERT INTO developer(developer_First_Name, developer_Last_Name, email, password, phone_Number) VALUES (
                                                                     '".$fname."',
                                                                     '".$lname."',
                                                                     '".$email."',
