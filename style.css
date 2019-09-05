@@ -225,6 +225,15 @@ hr {
 
 /* adding media queries */
 @media all and (max-width: 1300px){
+body{
+    max-width: 100vw;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
     .social-logo-box{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -272,45 +281,10 @@ hr {
     }
 
 
-    /* .landing-li a{
-      text-align: center;
-      font-size: 1rem;
-    }
-    .how{
-      display: grid;
-      grid-template-columns: 1fr;
-      
-    }
-    .sub-how{
-      width:95vw;
-    }
-  
-    .first-row{
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-  
-    .box{
-      width: 100vw;
-      text-align: center;
-    }
-    .line-div {
-      
-      padding-left: 8.5em;
-      
-    }
-   
-    img {
-      max-width: 95%;
-      display: block;
-      height: auto;
-      margin: 5%;
-      
-    }
     
-     */
   }
   @media all and (max-width: 920px){
+
     .how-it-works{
         width: 90vw;
         margin-left: 10vw;
