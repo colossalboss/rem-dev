@@ -278,3 +278,79 @@ margin: 0 auto;
   margin: 0 auto;
   text-align: center;
 }
+
+/* adding media queries */
+@media all and (max-width: 800px){
+
+  .landing-li a{
+    text-align: center;
+    font-size: 1rem;
+  }
+  .how{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+  .sub-how{
+    width:95vw;
+  }
+
+  .first-row{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .box{
+    width: 100vw;
+    text-align: center;
+  }
+  .line-div {
+    
+    padding-left: 8.5em;
+    
+  }
+ 
+  img {
+    max-width: 95%;
+    display: block;
+    height: auto;
+    margin: 5%;
+    
+  }
+  
+  
+}
+
+@media all and (max-width: 600px){
+  .line-div {
+    
+    padding-left: 4.5em;
+    
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .col{
+    width: 40vw;
+    padding:1rem;
+    
+  }
+  a{
+    text-align: center;
+  }
+
+  .landing-li a{
+    padding: 5%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .landing-right ul li{
+    display: block;
+  }
+}
