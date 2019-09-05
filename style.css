@@ -1,280 +1,406 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Source Sans Pro', 'sans-serif';
+/* Style body & general content */
 
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+    background-color: #001f3f;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #eeeeee;
+    text-align: center;
+    margin: 0px;
 }
 
-:root {
-  --main-color: #001F3F;
+a {
+    text-decoration: none;
+    color: #eeeeee;
 }
 
-.landing-li {
-  color: white;
+h2 {
+    margin: 0px;
 }
 
-.landing-li a {
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  padding: 30px 20px;
+/* Style buttons */
+button {
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    color: #eeeeee;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
 }
 
-.landing-ul {
-  list-style-type: none;
-  display: flex;
-  align-items: baseline;
-}
-
-
-.landing-li a {
-  text-decoration: none;
-}
-
-.landing-li a {
-  color: white;
-}
-
-.landing-ul {
-  list-style-type: none;
-}
-
-
-.landing-page {
-  background: var(--main-color)
-}
-
-.landing-nav {
-  color: white;
-  padding: 1.3rem;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-.increasefont {
-  font-size: 35px;
-  font-family: 'Pacifico', cursive;
-  color: white;
-  text-decoration: none;
-}
-
-
-.signup {
-  background: rgba(104, 226, 104, 0.932);
-  border-radius: 5px;
-  padding: 12px 15px;
-}
-
-
-/* Addition */
-.first-row {
-  display: flex;
-  padding: 0.8em;
-}
-
-.box {
-  width: 50%;
-}
-
-.big-image {
-  margin-top: 0.5em;
-}
-
-.text {
-  padding: 3.5em 1.5em 1.5em;
-  color: #fff;
-  line-height: 2em;
-}
-
-.text h4 {
-  color: #9e9e9e7a;
-}
-
-.text-field {
-  padding: 1.5em;
-}
-
-.text-field input {
-  color: white;
-  background: none;
-}
-
-.text-field input {
-  padding: 0.5em;
-  width: 70%;
-  border-radius: 4px;
-}
-
-.btn {
-  padding: 1.5em;
-}
-
-.btn button {
-  width: 70%;
-  padding: 0.5em;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-}
-
-.green-btn {
-  background-color: green;
-}
-
-.red-btn {
-  background-color: red;
-}
-
-.line-div {
-  display: flex;
-  padding: 0.5em;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.line {
-  width: 33%;
-  margin-top: 0.5em;
-}
-
-.line-text {
-  padding: 0 0.3em;
-}
-
-.image-box {
-  margin: auto;
-}
-
-.img-center {
-  text-align: center;
-}
-
-.big-image {
-  border-radius: 10px;
-}
-
-.how {
-  display: flex;
-}
-
-.sub-how {
-  width: 24%;
-  padding: 0.5em;
+.conclude {
   margin: 0.5em;
-  border: 1px solid grey;
-  border-radius: 8px;
+  padding: 1em;
 }
 
-.align-text {
-  text-align: center;
-  padding: 0.5em;
-  margin: 1em;
+.btn-small {
+    background-color: green;
 }
 
-.fa {
-  font-size: 2em;
-  text-align: center;
+.btn-large.find {
+    width: 50%;
+    background-color: green;
+}
+
+.btn-large.register {
+    width: 50%;
+    background-color: red;
+}
+
+.btn-medium.find {
+    width: 50%;
+    margin-top: 1em;
+    background-color: green;
+}
+
+.btn-medium.register {
+    width: 50%;
+    background-color: red;
+}
+
+/* Style Header & Navigation */
+.container {
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    margin: 0px auto;
+    }
+
+.nav-links {
+    list-style: none;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    display: inline-block;
+    margin-left: 60px;
+    vertical-align: center;
+}
+
+
+/* Logo Styles */
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    margin: 16px 0px 16px;
+}
+
+/* Style footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+.social {
+    color: #eeeeee;
+}
+
+
+/* Style Section "Hire the best remote dev..." */
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.search, .vector-file {
+    width: 50%;
+    text-align: center;
+}
+
+.vector-file img {
+    width: 80%;
+}
+
+.search {
+    padding: 8.9%;
+}
+
+.search-bar {
+    width: 80%;
+    margin-bottom: 1em;
+    background-color: transparent;
+    border: 2px solid #eeeeee;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 42.2px;
+    text-align: left;
+    margin: 0px;
+}
+
+.hero-offer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.horizontal-rule {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+hr {
+    width: 30%;
+}
+
+.or {
+    margin: 10px;
+    padding: 0px 11px 0px 11px;
+}
+/* Start Section "How it works..." */
+.how-it-works {
+    background: #eeeeee;
+    margin: 0 auto;
+    color: #001f3f;
+    text-align: center;
+    padding: 5%;
 }
 
 .icon {
-  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.works-how {
-  text-align: center;
-  margin: 2.5em;
-  padding: 0.5em;
+.i-tab {
+    min-width: 100px;
+    max-width: 200px;
+    margin: 0.5em;
+    border: 1px solid #001f3f;
+    border-radius: 5px;
 }
 
-.rep {
-  color: #fff;
+.svg-icon {
+    width: 70px;
+    height: auto;
 }
 
-.flexy {
-  width: 70%;
-  display: flex;
-  margin: auto;
-  padding: 1em;
-  background-color: #fff;
-}
-
-.quote-sign {
-  width: 10%;
-}
-
-.quote-text {
-  width: 85%;
-}
-
-.author {
-  display: flex;
-  width: 70%;
-  margin: auto;
-  padding: 1em;
-  background-color: #fff;
-}
-
-.author img {
-  border-radius: 50%;
-}
-
-.ceo {
-  margin: 1.5em 2.5em;
-}
-
-.top-space {
-  padding-top: 2em;
-}
-
+/* Style Section "Projects" */
 .projects {
-  background-color: #fff;
+    background-color: white;
+    color: #001f3f;
+    /* padding: 40px; */
 }
 
-.row {
-  display: flex;
-  width: 90%;
-  margin: auto;
-  justify-content: space-around;
-  text-align: center;
+.social-logo-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.col {
-  border: 1px solid grey;
-  width: 20%;
-  margin-bottom: 2.5em;
+.social-logo {
+    border: 1px solid #001f3f;
+    min-width: 100px;
+    max-width: 150px;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin: 1em 1em;
 }
 
-.col .fa {
-  font-size: 100px;
+.social-logo-image {
+    width: 50%;
+    height: auto;
 }
 
-.sm {
-  width: 60%;
-  margin: auto;
+/* Style Section "What are you waiting for?" */
+.search-bar-footer {
+    width: 50%;
+    background: none;
+    border: 2px solid #fff;
+    height: 56px;
+    padding: 0% 1% 0% 1%;
+    border-radius: 5px;
 }
 
-/* .inp {
-margin: 0 auto;
-} */
+/* add top margin to "what-are-you-waiting-for" */
 
-.inp input {
-  display: block;
-  width: 70%;
-  padding: 0.5em;
-  border-radius: 4px;
-  background: none;
-  margin: auto;
-  color: white;
+.what-are-you-waiting-for{
+    margin-top: 2rem;
 }
 
-#btn-div {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+/* adding media queries */
+
+/*
+@media all and (max-width: 1300px){
+body{
+    max-width: 100vw;
 }
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+  .social-logo-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+  }
+}
+*/
+
+/*
+@media all and (max-width: 1050px){
+
+    .hero{
+        display:grid;
+        grid-template-columns: 1fr;
+        margin-left: 10rem;
+    }
+    .search h1{
+        width: 50vh;
+    }
+
+    .how-it-works{
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+    .how-it-works div{
+
+        height:auto;
+    }
+
+    .projects{
+        margin: auto;
+    }
+    .projects{
+        margin-left: 10vw;
+    }
+
+    .social-logo-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+    }
+  }
+  */
+
+  /*
+  @media all and (max-width: 920px){
+
+    .how-it-works{
+        width: 90vw;
+        margin-left: 10vw;
+    }
+
+    .how-it-works div{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        height:auto;
+        margin: auto auto;
+        width: 80vw;
+    }
+
+    .how-it-works p{
+        font-size: 1.3rem;
+    }
+    .how-it-works h1{
+        font-size: 1.8rem;
+    }
+
+    main{
+        margin: 5vw;
+    }
+
+    .clients{
+        margin-top: 2rem;
+    }
+
+    .social-logo-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+    .projects{
+        margin-left: 10vw;
+    }
+  }
+  */
+
+  /*
+  @media all and (max-width: 600px){
+    .hero{
+
+        margin-left: 5rem;
+        margin-left: auto;
+    }
+
+    .how-it-works div{
+        width: 75vw;
+    }
+
+    .icon p{
+        width: auto;
+        padding: 1rem;
+    }
+
+  }
+
+  @media all and (max-width: 400px){
+    .social-logo-box{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+  }
+  */
+
+  /* Added */
+
+  @media screen and (max-width: 750px) {
+    .how {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .hero {
+      display: flex;
+    }
+
+    .sub-div {
+      width: 40%;
+    }
+
+    .sub-how {
+      width: 30%;
+    }
+
+    .big-image {
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .how {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .hero {
+      display: block;
+    }
+
+    .sub-div {
+      width: 80%;
+      margin: auto;
+    }
+
+    .sub-how {
+      width: 30%;
+    }
+
+    .big-image {
+      max-width: 100%;
+    }
+  }
+
