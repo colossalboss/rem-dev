@@ -1,8 +1,4 @@
 /* Style body & general content */
-html {
-    box-sizing: border-box;
-    padding: 0px auto;
-}
 
 *, *:before, *:after {
     box-sizing: inherit;
@@ -35,28 +31,33 @@ button {
     font-size: 22px;
 }
 
+.conclude {
+  margin: 0.5em;
+  padding: 1em;
+}
+
 .btn-small {
-    width: 122px;
     background-color: green;
 }
 
 .btn-large.find {
-    width: 452px;
+    width: 50%;
     background-color: green;
 }
 
 .btn-large.register {
-    width: 452px;
+    width: 50%;
     background-color: red;
 }
 
 .btn-medium.find {
-    width: 242px;
+    width: 50%;
+    margin-top: 1em;
     background-color: green;
 }
 
 .btn-medium.register {
-    width: 242px;
+    width: 50%;
     background-color: red;
 }
 
@@ -103,13 +104,17 @@ li {
 .hero {
     width: 100%;
     display: flex;
+    justify-content: space-around;
     text-align: center;
 }
 
 .search, .vector-file {
     width: 50%;
-    display: inline-block;
     text-align: center;
+}
+
+.vector-file img {
+    width: 80%;
 }
 
 .search {
@@ -117,12 +122,11 @@ li {
 }
 
 .search-bar {
-    width: 452px;
-    height: 56px;
-    margin-bottom: 20px;
+    width: 80%;
+    margin-bottom: 1em;
     background-color: transparent;
     border: 2px solid #eeeeee;
-    padding: 0% 5% 0% 5%;
+    padding: 1em;
     border-radius: 5px;
 }
 
@@ -139,13 +143,11 @@ h1 {
 .horizontal-rule {
     display: flex;
     justify-content: space-between;
-    width: 360px;
-    /* padding: 2% 12% 2% 12%; */
+    width: 70%;
 }
 
 hr {
-    width: 197px;
-    margin: 20px 0px 20px 0px;
+    width: 30%;
 }
 
 .or {
@@ -163,16 +165,16 @@ hr {
 
 .icon {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .i-tab {
-    margin: 0px 30px;
-    width: 231px;
-    height: 243.84px;
+    min-width: 100px;
+    max-width: 200px;
+    margin: 0.5em;
     border: 1px solid #001f3f;
     border-radius: 5px;
-    padding: 10px
 }
 
 .svg-icon {
@@ -184,33 +186,32 @@ hr {
 .projects {
     background-color: white;
     color: #001f3f;
-    padding: 40px;
+    /* padding: 40px; */
 }
 
 .social-logo-box {
     display: flex;
-    justify-content: center;
-    padding: 40px 40px 0px 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .social-logo {
     border: 1px solid #001f3f;
-    width: 144px;
-    height: 144px;
+    min-width: 100px;
+    max-width: 150px;
     border-radius: 5px;
-    padding: 20px;
-    box-sizing: border-box;
-    margin: 0px 30px;
+    padding: 0.5em;
+    margin: 1em 1em;
 }
 
 .social-logo-image {
-    width: 100px;
+    width: 50%;
     height: auto;
 }
 
 /* Style Section "What are you waiting for?" */
 .search-bar-footer {
-    width: 573px;
+    width: 50%;
     background: none;
     border: 2px solid #fff;
     height: 56px;
@@ -219,11 +220,14 @@ hr {
 }
 
 /* add top margin to "what-are-you-waiting-for" */
+
 .what-are-you-waiting-for{
     margin-top: 2rem;
 }
 
 /* adding media queries */
+
+/*
 @media all and (max-width: 1300px){
 body{
     max-width: 100vw;
@@ -234,17 +238,15 @@ img{
     height: auto;
 }
 
-    .social-logo-box{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 2rem;
-        /* margin: auto; */
-    }
-
-    
-    
+  .social-logo-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+  }
 }
+*/
 
+/*
 @media all and (max-width: 1050px){
 
     .hero{
@@ -262,8 +264,8 @@ img{
     }
 
     .how-it-works div{
-       
-        height:auto;  
+
+        height:auto;
     }
 
     .projects{
@@ -277,12 +279,11 @@ img{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2rem;
-        /* margin: auto; */
     }
-
-
-    
   }
+  */
+
+  /*
   @media all and (max-width: 920px){
 
     .how-it-works{
@@ -297,8 +298,6 @@ img{
         height:auto;
         margin: auto auto;
         width: 80vw;
-        
-       
     }
 
     .how-it-works p{
@@ -320,18 +319,18 @@ img{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 2rem;
-        /* margin: auto; */
     }
 
     .projects{
         margin-left: 10vw;
     }
-
   }
-  
+  */
+
+  /*
   @media all and (max-width: 600px){
     .hero{
-        
+
         margin-left: 5rem;
         margin-left: auto;
     }
@@ -344,19 +343,64 @@ img{
         width: auto;
         padding: 1rem;
     }
-    
+
   }
 
   @media all and (max-width: 400px){
-    /* .projects{
-        width: 80vw;
-    } */
-
     .social-logo-box{
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2rem;
-        /* margin: auto; */
+    }
+  }
+  */
+
+  /* Added */
+
+  @media screen and (max-width: 750px) {
+    .how {
+      display: flex;
+      flex-wrap: wrap;
     }
 
+    .hero {
+      display: flex;
+    }
+
+    .sub-div {
+      width: 40%;
+    }
+
+    .sub-how {
+      width: 30%;
+    }
+
+    .big-image {
+      max-width: 100%;
+    }
   }
+
+  @media screen and (max-width: 450px) {
+    .how {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .hero {
+      display: block;
+    }
+
+    .sub-div {
+      width: 80%;
+      margin: auto;
+    }
+
+    .sub-how {
+      width: 30%;
+    }
+
+    .big-image {
+      max-width: 100%;
+    }
+  }
+

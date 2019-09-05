@@ -280,6 +280,7 @@ margin: 0 auto;
 }
 
 /* adding media queries */
+/*
 @media all and (max-width: 800px){
 
   .landing-li a{
@@ -289,7 +290,7 @@ margin: 0 auto;
   .how{
     display: grid;
     grid-template-columns: 1fr;
-    
+
   }
   .sub-how{
     width:95vw;
@@ -305,27 +306,27 @@ margin: 0 auto;
     text-align: center;
   }
   .line-div {
-    
+
     padding-left: 8.5em;
-    
+
   }
- 
+
   img {
     max-width: 95%;
     display: block;
     height: auto;
     margin: 5%;
-    
-  }
-  
-  
-}
 
+  }
+}
+*/
+
+/*
 @media all and (max-width: 600px){
   .line-div {
-    
+
     padding-left: 4.5em;
-    
+
   }
   .row {
     display: grid;
@@ -334,11 +335,11 @@ margin: 0 auto;
     margin: auto;
     text-align: center;
   }
-  
+
   .col{
     width: 40vw;
     padding:1rem;
-    
+
   }
   a{
     text-align: center;
@@ -354,3 +355,7 @@ margin: 0 auto;
     display: block;
   }
 }
+*/
+
+/* Added msq */
+
