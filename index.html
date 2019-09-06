@@ -5,10 +5,12 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
         <link rel="stylesheet" href="style.css" type="text/css">
         <script src="https://unpkg.com/feather-icons"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     </head>
     <body>
         <!-- Start Navigation Bar -->
@@ -17,17 +19,15 @@
                 <a class="logo" href="index.html">
                     RemDev
                 </a>
-                <nav id="myLinks">
+                <nav>
                     <ul class="nav-links">
-                        <li><a href="search.html">Browse Developers</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="login.html">Login</a></li>
+                        <li><a href="search.html"> <b>Find Developers</b> </a></li>
+                        <li><a href="about.html"> <b>About Us</b> </a></li>
+                        <li><a href="team.html"> <b>Meet The Team </b></a></li>
+                        <li><a href="login.html"><b>Login</b></a></li>
                         <li><a href="signup.html"><button type="button" class="btn-small">Sign Up</button></a></li>
                     </ul>
                 </nav>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fas fa-bars"></i>
-                </a>
             </div>
         </header>
         <!-- End Navigation Bar -->
@@ -41,13 +41,13 @@
                     <h1 class="hire">Hire the best remote developers across Nigeria</h1>
                     <p class="hero-offer">Get your projects completed in no time by capable hands</p>
                     <input type="text" placeholder="What skills are you looking for?" class="search-bar"><br>
-                    <a href="#"><button type="button" class="btn-large find">Find Developers</button></a>
+                    <a href="search.html"><button type="button" class="btn-large find">Find Developers</button></a>
                     <div class="horizontal-rule">
                         <div><hr></div>
                         <div><p class="or">Or</p></div>
                         <div><hr></div>
                     </div>
-                  <a href=#><button type="button" class="btn-large register">Register as a developer</button></a>
+                  <a href="signup.html"><button type="button" class="btn-large register">Register as a developer</button></a>
                 </div>
                 <div class="vector-file sub-div">
                   <p><img src="https://res.cloudinary.com/dpkreativ/image/upload/v1567250811/rem-dev%20homepage/software_dev_zh9apf.png"></p>
@@ -70,17 +70,17 @@
                         <p>Search for the developer of your choice based on the skillsets you want</p>
                     </div>
                     <div class="create-icon-tab i-tab">
-                        <div class="create-icon"><img src="https://res.cloudinary.com/dpkreativ/image/upload/v1567742368/rem-dev%20homepage/clips-01_xpcia0.svg" class="svg-icon" /></div>
+                        <div class="create-icon"></div>
                         <h3>Create project</h3>
                         <p>Create a project from your dashboard and share with a developer</p>
                     </div>
                     <div class="payment-icon-tab i-tab">
-                            <div class="payment-icon"><img src="https://res.cloudinary.com/dpkreativ/image/upload/v1567742368/rem-dev%20homepage/clips-02_uivups.svg" class="svg-icon" /></div>
+                            <div class="payment-icon"></div>
                             <h3>Make payment</h3>
                             <p>After developer accepts project proceed to make payment</p>
                     </div>
                     <div class="build-icon-tab i-tab">
-                            <div class="build-icon"><img src="https://res.cloudinary.com/dpkreativ/image/upload/v1567742369/rem-dev%20homepage/clips-03_qccu4g.svg" class="svg-icon" /></div>
+                            <div class="build-icon"></div>
                             <h3>Build Project</h3>
                             <p>Get in touch with the developer and sit tight while you get updates</p>
                     </div>
@@ -93,17 +93,21 @@
             <!-- Start Section "Clients" -->
             <div class="clients">
                 <div>
-                    <h2>What our clients say</h2>
+                    <h2>Meet Our Team-Leader</h2>
                     <p>When we promise, we deliver</p>
                 </div>
 
                 <!-- Start quotes -->
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur maiores maxime magni molestiae necessitatibus! Veritatis, quos? Modi similique ut delectus vitae. Numquam facilis, culpa qui maxime voluptate rerum in totam!</p>
+                <p>We advocate for a level playing field for all Nigerian developers. <br> 
+                   Say Hello to Nigeria's Top freelance platform. Work from home and<br> 
+                   as well collaborate/hire the best minds/skills in the Nigerian tech industry <br>
+                   
+                </p>
                 <div>
-                    <div><img src="#"></div>
+                    <div><img src="https://res.cloudinary.com/gabeuzowulu/image/upload/v1567752451/Team%20Members/Victor_Ogunmoye_vz1nn5.png"></div>
                     <div>
-                        <p class="client-name">Elon Musk</p>
-                        <p class="client-title">CEO, TESLA</p>
+                        <p class="client-name">VICTOR OGUNMOYE</p>
+                        <p class="client-title"><i>Team-Lead</i>, RemDev</p>
                     </div>
                 </div>
                 <!-- End quotes -->
@@ -145,9 +149,9 @@
                 <div>
                     <input type="text" placeholder="What skills are you looking for?" class="search-bar-footer">
                     <div class="conclude">
-                        <a href="#"><button type="button" class="btn-medium register">Register as Developer</button></a><br>
-                        or<br>
-                        <a href="#"><button type="button" class="btn-medium find">Find Developers</button></a>
+                        <a href="signup.html"><button type="button" class="btn-medium register">Register as Developer</button></a>
+                        or
+                        <a href="search.html"><button type="button" class="btn-medium find">Find Developers</button></a>
                     </div>
                 </div>
             </div>
@@ -169,14 +173,4 @@
         <!-- End Footer -->
 
     </body>
-    <script>
-        function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-    </script>
 </html>
