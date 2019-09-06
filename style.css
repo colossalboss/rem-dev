@@ -133,12 +133,13 @@ li {
 h1 {
     font-size: 42.2px;
     text-align: left;
-    margin: 0px;
+    margin-left: 1em;
 }
 
 .hero-offer {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 1.5em;
+    margin: 1em;
 }
 .horizontal-rule {
     display: flex;
