@@ -1,25 +1,52 @@
 <!DOCTYPE = "html">
 <?php
+
+
+
+
 if (isset($_POST['submit'])) {
+
 	$hostname = 'localhost';
-	$username = 'user';
+	$username = 'root';
 	$password = '';
 
+
+	$name = $_POST["name"];
+	$sheet_no = $_POST["shn"];
+	$photo_url = $_POST["photo_url"];
+	$specialization = $_POST["specialization"];
+	$cv_link = $_POST["cv_link"];
 	try {
 		$dbh = new PDO("mysql:host=$hostname;dbname=remdev", $username, $password);
-		$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$sql = "INSERT INTO teammembers (name, sheet_no, image_Url, specialization, cv_link) VALUES ('".$_POST["name"]."', '".$_POST["shn"]."','".$_POST["photo_url"]."', '".$_POST["specialization"]."', '".$_POST["cv_link"]."')";
-		if ($dbh->query($sql)) {
-			echo "record inserted successfully";
+
+	
+	
+
+	$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+/*	if($specialization == "Select your track..."){
+		echo "<script>
+		alert('Please Select a track!')
+		
+
+		</script>";
+		}*/
+		$sql = "INSERT INTO teammembers (name, sheet_no, image_Url, specialization, cv_link) VALUES ('$name', '$sheet_no', '$photo_url', '$specialization', '$cv_link')";
+		if ($dbh->exec($sql) == true) {
+			echo "<script>alert('record inserted successfully')</script>";
 		} else {
-			echo "error inserting record";
+			echo "<script>alert('error inserting data')</script>";
 		}
-		$dbh = null;
+	
+			
+		
+		
+	
 	}
 	catch(PDOException $e)
 	{
-		echo $e->getMessage();
+		echo $dbh . "<br>" .$e->getMessage();
 	}
+$dbh = null;
 }
 
 ?>
@@ -66,15 +93,18 @@ if (isset($_POST['submit'])) {
 			display: flex;
 			flex-direction:column;
 		}
-		form input, form h2{
+		form input, form h2, form select, #notif{
 			margin:1rem auto;
 			padding: .5rem 0;
 		}
-		form input{
+		form input, form select{
 			width: 50%
 		}
 		input[type="text"]{
 			color: #001F3F;
+		}
+		#notif{
+			color: red;
 		}
 		.prof-form .btn{
 			font-size: 1.2rem;
@@ -103,15 +133,38 @@ if (isset($_POST['submit'])) {
         </ul>
     </nav>
 	<div>
-		<form class="prof-form" id="prof-form">
+		<form class="prof-form" id="prof-form" method = "POST"  action="profile_form.php">
 			<h2>Upload your membership details</h2>
+			<p id="notif"></p>
 			<input type="text" name = "name" Placeholder="Full name" required>
 			<input type="text" name = "shn" placeholder="Sheet no e.g shn99877" required>
-			<input type="text" name ="specialization" placeholder="specialization eg backend" required>
-			<input type="text" name="cv_link" placeholder = "profile link" required>
+			<select name = "specialization" id="spec" form ="prof-form" required>
+				<option name="" value="select your track" > Select your track...</option>
+				<option name="frontend" value="Frontend" > Frontend</option>
+				<option name="backend" value="Backend" > Backend</option>
+				<option name="ui/ux" value="UI/UX"> UI/UX</option>
+				<option name="dig_marketing" value="Digital Marketing" > Digital Marketing</option>
+				<option name="cont_writing" value="Content writing" > Content Writing</option>
+			</select>
+			
+			<input type="text" name="cv_link" placeholder = "Profile/CV link" required>
 			<input type = "text" name="photo_url" placeholder = "Cloudinary Photo Url" required>
-			<input type="submit" value="Submit" name ="submit" class="btn">
+			<input type="submit" value="Submit" name ="submit" id="submit" class="btn">
 		</form>
 	</div>
+<script>
+var submit = document.getElementById('submit'), spec = document.getElementById('spec'), notif = document.getElementById('notif');
+submit.addEventListener('click', (e) =>{
+	if (spec.value == "select your track"){
+	e.preventDefault(); 
+	notif. textContent = 'Please Select a track!';
+	spec.focus();
+	spec.style.border = "2px solid red";
+	//return;
+
+}
+})
+
+</script>
 </body>
 </html>
