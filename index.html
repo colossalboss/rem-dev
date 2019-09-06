@@ -11,6 +11,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    </head>
     </head>
     <body>
         <!-- Start Navigation Bar -->
@@ -28,6 +29,9 @@
                         <li><a href="signup.html"><button type="button" class="btn-small">Sign Up</button></a></li>
                     </ul>
                 </nav>
+                <a href="javascript:void(0);" class="link-icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
         </header>
         <!-- End Navigation Bar -->
@@ -172,5 +176,15 @@
         </footer>
         <!-- End Footer -->
 
+         <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
     </body>
 </html>
