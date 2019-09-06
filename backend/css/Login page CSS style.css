@@ -1,0 +1,132 @@
+body {
+    background-color: #001F3F;
+    margin: auto 0;
+
+}
+
+.mainnav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainnav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+li {
+    padding: 20px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.increasefont {
+    font-size: 35px;
+    font-family: 'Pacifico', cursive;
+}
+
+.push {
+    margin-left: auto;
+}
+
+.pushleft {
+    padding-right: 50px;
+}
+
+.sourcefont {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.-page {
+    width: 500px;
+    margin: auto;
+}
+
+.hiredev {
+    font-family: 'Roboto', sans-serif;
+}
+
+.rmvline {
+    text-decoration: none;
+    color: rgb(46, 172, 204);
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: white;
+    border-radius: 5px;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+}
+
+.center {
+    color: white;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 20px;
+}
+
+input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: 0;
+    background: #4caf54;
+    width: 146px;
+    height: 45px;
+    ;
+    border: 0%;
+    border-radius: 5px;
+    text-align: center;
+    float: right;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.forgotpsw{
+  position: absolute;
+  left: 43px;
+  padding-top: 0px;
+  margin: 20px 0 0;
+    color: black;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+.message {
+    padding-top: 50px;
+    margin: 20px 0 0;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login {
+    color: rgb(46, 172, 204);
+    text-decoration: none;
+}
