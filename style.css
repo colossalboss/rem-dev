@@ -68,7 +68,27 @@ button {
     justify-content: space-between;
     padding: 0px 40px;
     margin: 0px auto;
+    overflow: hidden;
+    position: relative;
     }
+
+.container #myLinks {
+    display: none;
+   } 
+
+.container a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+
+.container a:hover {
+    background-color: #ddd;
+    color: black;
+   } 
+
 
 .nav-links {
     list-style: none;
