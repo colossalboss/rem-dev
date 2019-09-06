@@ -41,12 +41,12 @@ button {
 }
 
 .btn-large.find {
-    width: 50%;
+    width: 80%;
     background-color: green;
 }
 
 .btn-large.register {
-    width: 50%;
+    width: 80%;
     background-color: red;
 }
 
