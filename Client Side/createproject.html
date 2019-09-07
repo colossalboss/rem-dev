@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Create Your Project </title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <style>
+        * {
+            /*
+        -May want to add "border-box for "box-sizing so padding does not affect width
+        -Reset margin and padding
+       */
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            /*
+          -Background color is #344a72
+        */
+            background-color: #794271;
+            font-family: "raleway", sans-serif;
+            color: white;
+            line-height: 1.8;
+        }
+        
+        a {
+            /*
+        Underlined links are ugly :)
+       */
+            text-decoration: none;
+        }
+        
+        #container {
+            /*
+        -Remember, margin: auto on left and right will center a block element
+        -I would also set a "max-width" for responsiveness
+        -May want to add some padding
+        */
+            margin: 30px auto;
+            max-width: 400px;
+            padding: 20px;
+        }
+        
+        .form-wrap {
+            /*
+          This is the white area around the form and heading, etc
+        */
+            background-color: pink;
+            padding: 15px 25px;
+        }
+        
+        .form-wrap h1,
+        .form-wrap p {
+            /*
+          May want to center these
+        */
+            text-align: center;
+        }
+        
+        .form-wrap .form-group {
+            /*
+          Each label, input is wrapped in .form-group
+        */
+            margin-top: 15px;
+        }
+        
+        .form-wrap .form-group label {
+            /*
+          Label should be turned into a block element
+        */
+            display: block;
+        }
+        
+        .form-wrap .form-group input {
+            /*
+          Inputs should reach accross the .form-wrap 100% and have some padding
+        */
+            width: 100%;
+            padding: 10px;
+            border: #ddd 1px solid;
+            border-radius: 4px;
+        }
+        
+        .form-wrap button {
+            /*
+          Button should wrap accross 100% and display as block
+          Background color for button is #49c1a2
+        */
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: green;
+            color: azure;
+            cursor: pointer;
+        }
+        
+        .form-wrap button:hover {
+            /*
+          Hover background color for button is #37a08e
+        */
+            background-color: crimson;
+        }
+        
+        .form-wrap .bottom-text {
+            /*
+          Bottom text is smaller
+        */
+            font-size: 13px;
+            margin-top: 10px;
+        }
+        
+        .form-wrap .form-group input:focus {
+            color: red;
+            border: red 1px solid;
+        }
+        
+        footer {
+            /*
+        Should be centered
+       */
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        footer a {
+            /*
+          Footer link color is #49c1a2
+        */
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="container">
+        <h1> <img src="client1.png"> </h1>
+        <div class="form-wrap">
+            <h1>Start Hiring</h1>
+            <p>Please enter your project title and details below</p>
+            <form>
+                <div class="form-group">
+                    <label for="last-name">Project Title</label>
+                    <input type="text" name="lastName" id="last-name" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+
+                <br>
+                <textarea id='message' name='mcontent' type='text' minlength="10" rows="10" cols="42" placeholder="Write your details here please" required></textarea>
+
+                <div class="form-group">
+                    <label for="last-name">Your RemDev UserID</label>
+                    <input type="text" name="lastName" id="last-name" />
+                </div>
+                <br></br>
+                <button type="submit" class="btn"> <a href="flutterwave.html"> MAKE PAYMENT </button>
+                <p class="bottom-text">
+                    <a href="https://flutterwave.com/ng/integrations/">On our secure payment platform </a>
+                </p>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
