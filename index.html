@@ -15,25 +15,20 @@
     </head>
     <body>
         <!-- Start Navigation Bar -->
-        <header>
-            <div class="container">
+        <header class="header">
                 <a class="logo" href="index.html">
                     RemDev
                 </a>
-                <nav id="myLinks">
-                    <ul class="nav-links">
+                <input class="menu-btn" type="checkbox" id="menu-btn">
+              <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>               
+                    <ul class="menu">
                         <li><a href="search.html"> <b>Find Developers</b> </a></li>
                         <li><a href="about.html"> <b>About Us</b> </a></li>
                         <li><a href="team.html"> <b>Meet The Team </b></a></li>
                         <li><a href="login.html"><b>Login</b></a></li>
-                        <li><a href="signup.html"><button type="button" class="btn-small">Sign Up</button></a></li>
+                      <li><a href="signup.html" class="btn-signup"><b>Sign Up</b></a></li>
                     </ul>
-                </nav>
-                <a href="javascript:void(0);" class="link-icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </header>
+       </header>
         <!-- End Navigation Bar -->
 
         <!-- Start Main Content -->
@@ -46,12 +41,8 @@
                     <p class="hero-offer">Get your projects completed in no time by capable hands</p>
                     <input type="text" placeholder="What skills are you looking for?" class="search-bar"><br>
                     <a href="search.html"><button type="button" class="btn-large find">Find Developers</button></a>
-                    <div class="horizontal-rule">
-                        <div><hr></div>
-                        <div><p class="or">Or</p></div>
-                        <div><hr></div>
-                    </div>
-                  <a href="signup.html"><button type="button" class="btn-large register">Register as a developer</button></a>
+                        <br><p class="or">Or</p></br>
+                    <a href="signup.html"><button type="button" class="btn-large register">Register as a developer</button></a>
                 </div>
                 <div class="vector-file sub-div">
                   <p><img src="https://res.cloudinary.com/dpkreativ/image/upload/v1567250811/rem-dev%20homepage/software_dev_zh9apf.png"></p>
@@ -69,22 +60,22 @@
                 <!-- Start Icon Tabs -->
                 <div class="icon">
                     <div class="search-icon-tab i-tab">
-                        <div class="search-icon"><img src="https://res.cloudinary.com/dpkreativ/image/upload/v1567292515/rem-dev%20homepage/iconfinder-icon_txzz4p.svg" class="svg-icon"></div>
+                        <div class="search-icon"><img src="https://res.cloudinary.com/dpkreativ/image/upload/v1567742369/rem-dev%20homepage/clips-04_iv7h5v.svg" class="svg-icon"></div>
                         <h3>Search for developers</h3>
                         <p>Search for the developer of your choice based on the skillsets you want</p>
                     </div>
                     <div class="create-icon-tab i-tab">
-                        <div class="create-icon"></div>
+                        <div class="create-icon"><img src="https://res.cloudinary.com/dpkreativ/image/upload/v1567742368/rem-dev%20homepage/clips-01_xpcia0.svg" class="svg-icon"></div>
                         <h3>Create project</h3>
                         <p>Create a project from your dashboard and share with a developer</p>
                     </div>
                     <div class="payment-icon-tab i-tab">
-                            <div class="payment-icon"></div>
+                            <div class="payment-icon"><img src="https://res.cloudinary.com/dpkreativ/image/upload/v1567742368/rem-dev%20homepage/clips-02_uivups.svg" class="svg-icon"></div>
                             <h3>Make payment</h3>
                             <p>After developer accepts project proceed to make payment</p>
                     </div>
                     <div class="build-icon-tab i-tab">
-                            <div class="build-icon"></div>
+                            <div class="build-icon"><img src="https://res.cloudinary.com/dpkreativ/image/upload/v1567742369/rem-dev%20homepage/clips-03_qccu4g.svg" class="svg-icon"></div>
                             <h3>Build Project</h3>
                             <p>Get in touch with the developer and sit tight while you get updates</p>
                     </div>
@@ -108,7 +99,7 @@
                    
                 </p>
                 <div>
-                    <div><img src="https://res.cloudinary.com/gabeuzowulu/image/upload/v1567752451/Team%20Members/Victor_Ogunmoye_vz1nn5.png"></div>
+                    <div><img src="https://res.cloudinary.com/gabeuzowulu/image/upload/v1567752451/Team%20Members/Victor_Ogunmoye_vz1nn5.png" class="client-img" style="border-radius: 50%;"></div>
                     <div>
                         <p class="client-name">VICTOR OGUNMOYE</p>
                         <p class="client-title"><i>Team-Lead</i>, RemDev</p>
@@ -153,8 +144,8 @@
                 <div>
                     <input type="text" placeholder="What skills are you looking for?" class="search-bar-footer">
                     <div class="conclude">
-                        <a href="signup.html"><button type="button" class="btn-medium register">Register as Developer</button></a>
-                        or
+                        <a href="signup.html"><button type="button" class="btn-medium register">Register as Developer</button></a><br><br>
+                        or<br>
                         <a href="search.html"><button type="button" class="btn-medium find">Find Developers</button></a>
                     </div>
                 </div>
@@ -175,7 +166,8 @@
             </div>
         </footer>
         <!-- End Footer -->
-
+    </body>
+    <!--
          <script>
         function myFunction() {
           var x = document.getElementById("myLinks");
@@ -185,6 +177,5 @@
             x.style.display = "block";
           }
         }
-    </script>
-    </body>
+    </script> -->
 </html>
