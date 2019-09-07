@@ -1,0 +1,405 @@
+/* Style body & general content */
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #001f3f;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #eeeeee;
+    text-align: center;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+h2 {
+    margin: 0px;
+}
+
+/* Style buttons */
+button {
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    color: #eeeeee;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+}
+
+.conclude {
+  margin: 0.5em;
+  padding: 1em;
+}
+
+.btn-small {
+    background-color: green;
+}
+
+.btn-large.find {
+    width: 100%;
+    background-color: green;
+}
+
+.btn-large.register {
+    width: 100%;
+    background-color: red;
+}
+
+.btn-medium.find {
+    width: 50%;
+    margin-top: 1em;
+    background-color: green;
+}
+
+.btn-medium.register {
+    width: 50%;
+    background-color: red;
+}
+
+/* Style Header & Navigation */
+
+/* header */
+
+.header {
+  background-color: #001f3f;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+  border-bottom: 1px solid #eee;
+}
+
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #001f3f;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  color: green;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 30px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #eee;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #eee;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
+/* Logo Styles */
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    margin: 0;
+}
+
+/* Style footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+.social {
+    color: #eeeeee;
+}
+
+
+/* Style Section "Hire the best remote dev..." */
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.search, .vector-file {
+    width: 50%;
+    text-align: center;
+}
+
+.vector-file img {
+    width: 80%;
+}
+
+.search {
+    padding: 8.9%;
+}
+
+.search-bar {
+    width: 100%;
+    margin-bottom: 1em;
+    background-color: transparent;
+    border: 2px solid #eeeeee;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+
+h1 {
+    font-size: 42.2px;
+    text-align: left;
+    margin-left: 0;
+}
+
+.hero-offer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    margin-bottom: 1em;
+    text-align: left;
+}
+.horizontal-rule {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.or {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0px 11px 0px 11px;
+}
+/* Start Section "How it works..." */
+.how-it-works {
+    background: #eeeeee;
+    margin: 0 auto;
+    color: #001f3f;
+    text-align: center;
+    padding: 5%;
+}
+
+.icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.i-tab {
+    min-width: 100px;
+    max-width: 200px;
+    margin: 0.5em;
+    border: 1px solid #001f3f;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.svg-icon {
+    width: 70px;
+    height: auto;
+}
+
+/* Style Section Clients */
+.clients {
+  padding: 20px;
+}
+
+/* Style Section "Projects" */
+.projects {
+    background-color: white;
+    color: #001f3f;
+    padding: 20px;
+}
+
+.social-logo-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.social-logo {
+    border: 1px solid #001f3f;
+    min-width: 100px;
+    max-width: 150px;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin: 1em 1em;
+}
+
+.social-logo-image {
+    width: 50%;
+    height: auto;
+}
+
+/* Style Section "What are you waiting for?" */
+.search-bar-footer {
+    width: 50%;
+    background: none;
+    border: 2px solid #fff;
+    height: 56px;
+    padding: 0% 1% 0% 1%;
+    border-radius: 5px;
+}
+
+.what-are-you-waiting-for {
+    padding: 20px;
+}
+  /* Added */
+
+  @media screen and (max-width: 750px) {
+    .how {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .client-img {
+      width: 150px;
+      height: auto;
+    }
+    
+    button {
+      font-size: 15px;
+    }
+
+    .hero {
+      display: flex;
+    }
+
+    .sub-div {
+      width: 40%;
+    }
+
+    .sub-how {
+      width: 30%;
+    }
+
+    .big-image {
+      max-width: 100%;
+    }
+    
+  }
+
+  @media screen and (max-width: 450px) {
+    .how {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .hero {
+      display: block;
+    }
+
+    .sub-div {
+      width: 80%;
+      margin: auto;
+    }
+
+    .sub-how {
+      width: 30%;
+    }
+
+    .big-image {
+      max-width: 100%;
+    }
+  }
+
+ .link-icon {
+    font-size: 3em;
+    margin-top: 0.5em;
+  }
